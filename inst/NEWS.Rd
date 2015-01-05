@@ -482,7 +482,7 @@
     \item Added examples of converting from PLINK and VCF in Formats vignette.
   }
 }
-\section{Changes in version 1.12.1}{
+\section{Changes in version 1.12.2}{
   \itemize{
     \item Bug fix in imputedDosageFile - for IMPUTE2, include columns
   from .samples file in output scan annotation.
