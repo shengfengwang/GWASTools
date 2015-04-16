@@ -1,0 +1,48 @@
+Package: GWASTools
+Version: 1.14.0
+Type: Package
+Title: Tools for Genome Wide Association Studies
+Description: Classes for storing very large GWAS data sets and annotation, and functions for GWAS data cleaning and analysis.
+Author: Stephanie M. Gogarten, Cathy Laurie, Tushar Bhangale, Matthew P. Conomos, Cecelia Laurie, Caitlin McHugh, Ian Painter, Xiuwen Zheng, Jess Shen, Rohit Swarnkar, Adrienne Stilp, Sarah Nelson
+Maintainer: Stephanie M. Gogarten <sdmorris@u.washington.edu>, Adrienne Stilp <amstilp@u.washington.edu>
+Depends: Biobase
+Imports: methods, ncdf, gdsfmt, DBI, RSQLite, GWASExactHW, DNAcopy, survival, sandwich, lmtest, logistf, quantsmooth
+Suggests: GWASdata, BiocGenerics, RUnit, SNPRelate, snpStats, VariantAnnotation
+License: Artistic-2.0
+LazyData: yes
+biocViews: SNP, GeneticVariability, QualityControl, Microarray
+Collate: utils.R AllGenerics.R AllClasses.R genotypeToCharacter.R
+  Methods-ScanAnnotationDataFrame.R Methods-SnpAnnotationDataFrame.R
+  Methods-ScanAnnotationSQLite.R Methods-SnpAnnotationSQLite.R
+  Methods-GdsReader.R Methods-GdsGenotypeReader.R Methods-GdsIntensityReader.R
+  Methods-NcdfReader.R Methods-NcdfGenotypeReader.R Methods-NcdfIntensityReader.R
+  Methods-MatrixGenotypeReader.R
+  Methods-GenotypeData.R Methods-IntensityData.R
+  createDataFile.R createAffyIntensityFile.R checkGenotypeFile.R checkIntensityFile.R
+  setMissingGenotypes.R imputedDosageFile.R checkImputedDosageFile.R
+  ncdfSubset.R ncdfSubsetCheck.R gdsSubset.R gdsSubsetCheck.R
+  plinkUtils.R snpStats.R vcfWrite.R
+  convertNcdfGds.R convertVcfGds.R
+  BAFfromClusterMeans.R BAFfromGenotypes.R
+  sdByScanChromWindow.R medianSdOverAutosomes.R meanSdByChromWindow.R findBAFvariance.R
+  anomSegmentBAF.R anomFilterBAF.R anomDetectBAF.R
+  LOHfind.R LOHselectAnoms.R anomDetectLOH.R
+  anomSegStats.R anomStatsPlot.R anomIdentifyLowQuality.R
+  alleleFrequency.R apartSnpSelection.R
+  hetByScanChrom.R hetBySnpSex.R 
+  missingGenotypeByScanChrom.R missingGenotypeBySnpSex.R
+  meanIntensityByScanChrom.R 
+  qualityScoreByScan.R qualityScoreBySnp.R
+  batchChisqTest.R batchFisherTest.R
+  duplicateDiscordance.R duplicateDiscordanceProbability.R
+  duplicateDiscordanceAcrossDatasets.R dupDosageCorAcrossDatasets.R
+  assocRegression.R assocCoxPH.R exactHWE.R mendelErr.R
+  genoClusterPlot.R genoClusterPlotByBatch.R 
+  chromIntensityPlot.R pseudoautoIntensityPlot.R intensityOutliersPlot.R 
+  qqPlot.R manhattanPlot.R snpCorrelationPlot.R
+  ibdAreasDraw.R ibdAssignRelatedness.R ibdPlot.R findRelationsMeanVar.R
+  pedigreeCheck.R pedigreeDeleteDuplicates.R
+  pedigreePairwiseRelatedness.R pedigreeMaxUnrelated.R
+  simulateGenotypeMatrix.R simulateIntensityMatrix.R
+  defunct.R
+  assocTestCPH.R assocTestFisherExact.R assocTestRegression.R gwasExactHW.R
