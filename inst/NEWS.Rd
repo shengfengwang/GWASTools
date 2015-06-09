@@ -546,5 +546,10 @@
     \item Added "snpID" and "scanID" arguments to getGenotypeSelection.
   } 
 }
+\section{Changes in version 1.14.1}{
+  \itemize{
+    \item alleleFrequency includes scans with missing sex.
+  }   
+}
 
 
